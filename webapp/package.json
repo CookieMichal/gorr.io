@@ -38,7 +38,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,6 +59,11 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "prettier": "^2.0.5",
-    "typescript-styled-plugin": "^0.15.0"
+    "typescript-styled-plugin": "^0.15.0",
+    "@graphql-codegen/typescript": "1.13.5",
+    "@graphql-codegen/typescript-operations": "1.13.5",
+    "@graphql-codegen/typescript-react-apollo": "1.13.5",
+    "@graphql-codegen/cli": "1.13.5",
+    "@graphql-codegen/fragment-matcher": "1.13.5"
   }
 }

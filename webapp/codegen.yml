@@ -1,0 +1,17 @@
+overwrite: true
+schema: "../backend/src/graphql/schema.gql"
+documents: "src/**/*.gql"
+generates:
+  src/generated/graphql.tsx:
+    config:
+      withHOC: false
+      withComponent: false
+      withHooks: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "fragment-matcher"
+hooks:
+  afterAllFileWrite:
+    - prettier --write
